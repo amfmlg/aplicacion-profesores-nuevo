@@ -23,7 +23,7 @@
         </form>
         <form method="POST" action="<?php echo e(route('dashboard')); ?>">
             <?php echo csrf_field(); ?>
-            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded mt-2">¿No tienes cuenta?¡Registrate!</button>
+            <a href="<?php echo e(route('home')); ?>" class="w-full bg-green-500 text-white py-2 rounded mt-2">¿No tienes cuenta?¡Registrate!</a>
         </form>
     </div>
 </body>

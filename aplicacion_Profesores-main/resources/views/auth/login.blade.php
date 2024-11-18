@@ -23,7 +23,7 @@
         </form>
         <form method="POST" action="{{ route('dashboard') }}">
             @csrf
-            <button type="submit" class="w-full bg-green-500 text-white py-2 rounded mt-2">¿No tienes cuenta?¡Registrate!</button>
+            <a href="{{ route('home') }}" class="w-full bg-green-500 text-white py-2 rounded mt-2">¿No tienes cuenta?¡Registrate!</a>
         </form>
     </div>
 </body>
