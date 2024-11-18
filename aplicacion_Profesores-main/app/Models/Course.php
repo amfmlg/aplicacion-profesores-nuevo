@@ -11,5 +11,5 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description']; // Asegúrate de tener los campos correctos
+    protected $fillable = ['name', 'description', 'author', 'alumns']; // Asegúrate de tener los campos correctos
 }

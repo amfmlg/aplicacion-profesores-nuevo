@@ -14,6 +14,8 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('author');
+            $table->integer('alumns');
             $table->timestamps();
         });
     }
