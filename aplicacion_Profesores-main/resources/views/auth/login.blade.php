@@ -9,8 +9,8 @@
 <body class="flex items-center justify-center h-screen bg-gray-100">
     <div class="w-full max-w-sm bg-white rounded-lg shadow-md p-6">
         <h2 class="text-2xl font-bold mb-6 text-center">Iniciar Sesión</h2>
-        <form method="POST" action="<?php echo e(route('dashboard')); ?>">
-            <?php echo csrf_field(); ?>
+        <form method="POST" action="{{ route('dashboard') }}">
+            @csrf
             <div class="mb-4">
                 <label for="email" class="block text-gray-700">Correo Electrónico</label>
                 <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
@@ -21,11 +21,10 @@
             </div>
             <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Iniciar Sesión</button>
         </form>
-        <form method="POST" action="<?php echo e(route('dashboard')); ?>">
-            <?php echo csrf_field(); ?>
+        <form method="POST" action="{{ route('dashboard') }}">
+            @csrf
             <button type="submit" class="w-full bg-green-500 text-white py-2 rounded mt-2">¿No tienes cuenta?¡Registrate!</button>
         </form>
     </div>
 </body>
 </html>
-<?php /**PATH C:\Users\fer\Documents\GitHub\aplicacion-profesores-nuevo\aplicacion_Profesores-main\resources\views/auth/login.blade.php ENDPATH**/ ?>

@@ -20,7 +20,7 @@ Route::get('/settings', [SettingsController::class, 'index'])->name('settings');
 
 Route::middleware(['auth'])->group(function () {
     // Ruta para el dashboard de inicio
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::post('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 // Ruta para la página de inicio (pública)
